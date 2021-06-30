@@ -1,15 +1,15 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	
+	{% load static %}
 	<title>Pathology lab Report Website</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
 <body>
 	<div class="container">
-	<img src="img/Untitled.png" class="img-fluid">
+	<img src="{% static 'img/Untitled.png' %}" class="img-fluid">
 	<div class="row-loginbox">
-		<div class="col-sm-3">
+		<div class="col-sm-7">
 		<h1>Login Here</h1>
 			<form>
 				<div class="form-group">

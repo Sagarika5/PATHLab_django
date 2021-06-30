@@ -1,10 +1,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	
+	{% load static %}
 	<title>Pathology lab Report Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
@@ -29,7 +29,7 @@
     </nav>
 </div>
 <div id="manuBtn">
-    <img src="img/C:\Users\USER1\Desktop\django\PATHLab\User\Static\img\menu.jpg" id="menu">
+    <img src="{% static 'img/menu.jpg' %}" id="menu">
 </div>
 
  <!--Features-->
@@ -66,7 +66,7 @@
             </div>
     </div>
     <div class="features-img">
-        <img src="images/C:\Users\USER1\Desktop\django\PATHLab\User\templates\img\why Choose us.jpg">
+        <img src="{% static 'img\why Choose us.jpg' %}">
     </div>
 
 </div>
@@ -80,28 +80,28 @@
     </div>
     <div class="Service-box">
         <div class="Single service">
-            <img src="images/C:\Users\USER1\Desktop\django\PATHLab\User\templates\img\services-pic3.jpg">
+            <img src="{% static 'img\services-pic3.jpg'%}">
             <div class="overlay"></div>
             <div class="Service-desc">
                 <h3>Free Home Collection</h3>
             </div>
         </div>
         <div class="Single service">
-            <img src="images/C:\Users\USER1\Desktop\django\PATHLab\User\templates\img\services-pic2.jpg">
+            <img src="{% static 'img\services-pic2.jpg'%}">
             <div class="overlay"></div>
             <div class="Service-desc">
                 <h3>Used Advanced Lab Instruments</h3>
             </div>
         </div>
         <div class="Single service">
-            <img src="images/C:\Users\USER1\Desktop\django\PATHLab\User\templates\img\services-pic1.jpg">
+            <img src="{% static 'img\services-pic1.jpg'%}">
             <div class="overlay"></div>
             <div class="Service-desc">
                 <h3>Accurate Reports on TIME</h3>
             </div>
         </div>
         <div class="Single service">
-            <img src="images/C:\Users\USER1\Desktop\django\PATHLab\User\templates\img\services-pic4.jpg">
+            <img src="{% static 'img\services-pic4.jpg'%}">
             <div class="overlay"></div>
             <div class="Service-desc">
                 <h3>Book Tests Online</h3>
@@ -119,7 +119,7 @@
     <div class="testimonial-row">
         <div class="testimonial-col">
             <div class="user">
-                <img src="images/">
+                <img src="{% static 'img/'%}">
                 <div class="user-info">
                     <h4>KEN NORMAN <i class="fa fa-twitter"></i></h4>
                     <small>@kenroman</small>
@@ -131,7 +131,7 @@
         </div>
         <div class="testimonial-col">
             <div class="user">
-                <img src="images/">
+                <img src="{% static 'img/'%}">
                 <div class="user-info">
                     <h4>Liara Karian <i class="fa fa-twitter"></i></h4>
                     <small>@liarakarian</small>
@@ -143,7 +143,7 @@
         </div>
         <div class="testimonial-col">
             <div class="user">
-                <img src="images/">
+                <img src="{% static 'img/'%}">
                 <div class="user-info">
                     <h4>Ricky Danial <i class="fa fa-twitter"></i></h4>
                     <small>@rickydanial</small>
@@ -191,11 +191,11 @@ sideNav.style.right = "-250px";
 menuBtn.onclick = function(){
     if(sideNav.style.right=="-250px"){
         sideNav.style.right= "0";
-        menu.src = "img/C:\Users\USER1\Desktop\django\PATHLab\User\Static\img\close.png";
+        menu.src = "{% static 'img/close.png' %}";
     }
     else{
         sideNav.style.right = "-250px";
-        menu.src = "img/C:\Users\USER1\Desktop\django\PATHLab\User\Static\img\menu.jpg";
+        menu.src = "{% static 'img/menu.jpg'%}";
     }
 }
 
